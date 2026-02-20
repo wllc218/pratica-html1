@@ -116,6 +116,7 @@ p {
 }
 
 .conteudo {
+    gap: 40px;
     position: relative;
     padding: 10px 160px 10px;
     display: flex;
@@ -215,40 +216,92 @@ p {
 /* CATEGORIAS */
 
 
-.categorias {
+#categorias {
+    position: relative;
     padding: 160px;
 }
 
-.categorias-buttons {
+.categorias-icons {
+    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
+    justify-content: space-between;
 }
 
-.categorias-buttons>div {
+.botoes {
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    transition: .4s;
+}
+
+.botoes .icone {
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 240px;
     height: 240px;
-    padding: 90px;
-    border-radius: 100%;
-    background-color: var(--rosa);
-
-
-}
-
-.categorias-buttons>div:nth-child(odd) {
     background-color: var(--roxo);
+    transition: .4s;
 }
 
-.categorias-buttons>div:nth-child(even) path {
-    fill: #0F0008;
+.categorias-icons > .botoes:nth-child(even) .icone {
+    background-color: var(--rosa);
+}
+
+.categorias-icons > .botoes:nth-child(even) path {
+    fill: var(--preto);
+}   
+
+.botoes .botao {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(100%);
+    transition: .4s;
 }
 
 
+.botoes .botao,
+.botoes button {
+    width: 240px;
+    height: 240px;
+    border: none;
+    background-color: var(--branco-background);
+    cursor: pointer;
+}
+
+
+.botoes:hover .icone {
+    transform: translateY(-100%);
+    
+}
+
+.botoes:hover .botao {
+    transform: translateY(0);
+}
+
+.botoes:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-background-categorias {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* CARDS */
 
@@ -366,5 +419,30 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+
+@media (min-width: 600px) {
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .esq {
+        align-items: center;
+        text-align: center;
+    }
 
 }
