@@ -1,0 +1,64 @@
+[
+    {
+        "nome": "Anel",
+        "tipo": "aneis",
+        "preco": 69,
+        "promocao": 30,
+        "estoque": 10,
+        "estrelas": 5,
+        "imagem": "anel.png",
+        "tags": ["teste", "teste", "teste"]
+    },
+    {
+        "nome": "Brinco",
+        "tipo": "brincos",
+        "preco": 89,
+        "promocao": 40,
+        "estoque": 10,
+        "estrelas": 4,
+        "imagem": "mulher.png",
+        "tags": ["teste", "teste", "teste"]
+    },
+    {
+        "nome": "Gargantilha",
+        "tipo": "gargantilhas",
+        "preco": 79,
+        "promocao": "",
+        "estoque": 10,
+        "estrelas": 5,
+        "imagem": "background-novidades.png",
+        "tags": ["teste", "teste2", "teste", "teste4", "teste5"]
+    },
+    {
+        "nome": "Bracelete",
+        "tipo": "bracelete",
+        "preco": 39,
+        "promocao": "true",
+        "estoque": 10,
+        "estrelas": 3,
+        "imagem": "img.png",
+        "tags": ["teste", "teste", "teste"]
+    },
+    {
+        "nome": "Tornozeleira",
+        "tipo": "tornozeleira",
+        "preco": 49,
+        "promocao": "true",
+        "estoque": 10,
+        "estrelas": 5,
+        "imagem": "img.png",
+        "tags": ["teste", "teste", "teste"]
+    },
+    {
+        "nome": "Perfume",
+        "tipo": "outros",
+        "preco": 129,
+        "promocao": "false",
+        "estoque": 10,
+        "estrelas": 5,
+        "imagem": "img.png",
+        "tags": ["teste", "teste", "teste"]
+    }
+
+    
+]
