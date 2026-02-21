@@ -7,7 +7,7 @@
         "estoque": 10,
         "estrelas": 5,
         "imagem": "anel.png",
-        "tags": ["teste", "teste", "teste"]
+        "tags": ["Alianças", "teste"]
     },
     {
         "nome": "Brinco",
@@ -17,7 +17,7 @@
         "estoque": 10,
         "estrelas": 4,
         "imagem": "mulher.png",
-        "tags": ["teste", "teste", "teste"]
+        "tags": ["Brincos", "teste"]
     },
     {
         "nome": "Gargantilha",
@@ -27,7 +27,7 @@
         "estoque": 10,
         "estrelas": 5,
         "imagem": "background-novidades.png",
-        "tags": ["teste", "teste2", "teste", "teste4", "teste5"]
+        "tags": ["Gargantilhas", "teste"]
     },
     {
         "nome": "Bracelete",
@@ -37,7 +37,7 @@
         "estoque": 10,
         "estrelas": 3,
         "imagem": "img.png",
-        "tags": ["teste", "teste", "teste"]
+        "tags": ["Braceletes", "teste"]
     },
     {
         "nome": "Tornozeleira",
@@ -47,7 +47,7 @@
         "estoque": 10,
         "estrelas": 5,
         "imagem": "img.png",
-        "tags": ["teste", "teste", "teste"]
+        "tags": ["Tornozeleiras", "teste"]
     },
     {
         "nome": "Perfume",
@@ -57,7 +57,7 @@
         "estoque": 10,
         "estrelas": 5,
         "imagem": "img.png",
-        "tags": ["teste", "teste", "teste"]
+        "tags": ["Outros", "teste"]
     }
 
     

@@ -208,6 +208,7 @@ p {
     top: 0px;
     z-index: -1;
     pointer-events: none;
+
 }
 
 
@@ -251,13 +252,13 @@ p {
     transition: .4s;
 }
 
-.categorias-icons > .botoes:nth-child(even) .icone {
+.categorias-icons>.botoes:nth-child(even) .icone {
     background-color: var(--rosa);
 }
 
-.categorias-icons > .botoes:nth-child(even) path {
+.categorias-icons>.botoes:nth-child(even) path {
     fill: var(--preto);
-}   
+}
 
 .botoes .botao {
     position: absolute;
@@ -284,7 +285,7 @@ p {
 
 .botoes:hover .icone {
     transform: translateY(-100%);
-    
+
 }
 
 .botoes:hover .botao {
@@ -292,7 +293,7 @@ p {
 }
 
 .botoes:hover {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .img-background-categorias {
@@ -301,7 +302,193 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
+
+
+
+/* MAIS POPULARES */
+
+#mais-populares {
+    position: relative;
+    padding-block: 200px;
+}
+
+.rosa {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    padding: 60px 160px;
+    flex-direction: row;
+    background-color: #FFCED4;
+}
+
+.descricao-populares {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.setas {
+    display: flex;
+    gap: 30px;
+}
+
+.setas button {
+    width: 60px;
+    height: 60px;
+    border: 2.5px solid var(--preto);
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease .2s;
+}
+
+.setas button:hover {
+    background-color: var(--preto);
+    cursor: pointer;
+}
+
+.setas button:hover svg path {
+    stroke: var(--branco-background);
+}
+
+.carrosel {
+    position: absolute;
+    width: auto;
+    bottom: 50px;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+
+.carrosel-cards {
+    display: flex;
+    gap: 20px;
+    transition: ease .2s;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    background-color: #131313;
+    padding: 160px;
+    color: var(--branco-background);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ize {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+
+}
+
+.socials button {
+    transition: ease .2s;
+}
+
+.socials button:hover {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.button-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+.produtos,
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produtos button,
+.blog button {
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: ease .2s;
+    cursor: pointer;
+}
+
+.subscribe .desc {
+    font-size: small;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.email {
+    display: flex;
+    background-color: #0C0909;
+
+}
+
+.email button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    border-radius: 4px;
+    background-color: var(--rosa);
+    transition: ease .2s;
+}
+
+.email button:hover {
+    background-color: #f5c7d1;
+    cursor: pointer;
+}
+
+.email input {
+    background-color: #0C0909;
+    color: #d3d3d3;
+    width: 100%;
+}
+
+.email input,
+.email button {
+    border: none;
+}
+
 
 /* CARDS */
 
@@ -312,12 +499,16 @@ p {
 }
 
 .card {
+
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background-color: black;
-    overflow: hidden;
     z-index: 1;
+    width: 300px;
+    background-color: white;
+    transition: ease .2s;
+    overflow: hidden;
 }
 
 .info {
@@ -326,12 +517,6 @@ p {
 
 }
 
-.card {
-    width: 300px;
-    background-color: white;
-    transition: ease .2s;
-
-}
 
 .card:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -398,7 +583,7 @@ p {
 .imagem img {
     object-fit: cover;
     display: block;
-    width: 300px;
+    width: 100%;
     height: 300px;
 }
 
@@ -433,7 +618,7 @@ p {
 
 /* RESPONSIVIDADE */
 
-
+/*
 @media (min-width: 600px) {
 
     .conteudo {
@@ -446,3 +631,4 @@ p {
     }
 
 }
+*/

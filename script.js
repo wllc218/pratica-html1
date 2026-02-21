@@ -3,7 +3,7 @@ fetch("produtos.json")
     .then(dados => {
 
         const container = document.querySelector(".cards");
-
+        const carroselContainer = document.querySelector(".carrosel-cards");
 
         function card(item) {
             return `
@@ -58,9 +58,24 @@ fetch("produtos.json")
         }
 
 
-        container.innerHTML = card(dados[0]);
+        container.innerHTML += card(dados[0]);
         container.innerHTML += card(dados[1]);
         container.innerHTML += card(dados[2]);
 
+        dados.forEach(item => {
+            carroselContainer.innerHTML += card(item);
+        });
+
     });
 
+const esquerda = document.querySelector(".seta-esq");
+const direita = document.querySelector(".seta-dir");
+const carrosel = document.querySelector(".carrosel-cards");
+
+esquerda.addEventListener("click", () => {
+    carrosel.style.transform += "translateX(320px)";
+});
+
+direita.addEventListener("click", () => {
+    carrosel.style.transform += "translateX(-320px)";
+});
